@@ -1,0 +1,39 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expense Tracker</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Expense Tracker & Budget Visualizer</h1>
+
+    <h2>Total: Rp <span id="total">0</span></h2>
+
+    <!-- FORM -->
+    <form id="form">
+      <input type="text" id="name" placeholder="Item name">
+      <input type="number" id="amount" placeholder="Amount">
+      <select id="category">
+        <option value="">Select Category</option>
+        <option value="Food">Food</option>
+        <option value="Transport">Transport</option>
+        <option value="Fun">Fun</option>
+      </select>
+      <button type="submit">Add</button>
+    </form>
+
+    <!-- LIST -->
+    <ul id="list"></ul>
+
+    <!-- CHART -->
+    <canvas id="chart"></canvas>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html> 
