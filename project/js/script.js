@@ -41,8 +41,8 @@ function renderList() {
     const li = document.createElement("li");
 
     li.innerHTML = `
-      ${item.name} - Rp ${item.amount} (${item.category})
-      <span class="delete" onclick="deleteItem(${index})">x</span>
+      ${item.name} - $ ${item.amount} (${item.category})
+      <span class="delete" onclick="deleteItem(${index})">Delete</span>
     `;
 
     list.appendChild(li);
@@ -54,6 +54,16 @@ function deleteItem(index) {
   update();
 }
 
+function deleteItem(index) {
+  const item = data[index];
+
+  const confirmDelete = confirm(`Are you sure you want to delete "${item.name}"?`);
+
+  if (confirmDelete) {
+    data.splice(index, 1);
+    update();
+  }
+}
 function updateTotal() {
   const total = data.reduce((acc, item) => acc + item.amount, 0);
   totalEl.innerText = total;

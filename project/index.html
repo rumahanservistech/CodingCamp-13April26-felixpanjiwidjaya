@@ -11,9 +11,13 @@
   <div class="container">
     <h1>Expense Tracker & Budget Visualizer</h1>
 
-    <h2>Total: Rp <span id="total">0</span></h2>
+    <div class="total-box"> <!-- TOTAL -->
+      <p>Total : </p>
+      <h2>$ <span id="total">0</span></h2>
+    </div>
 
     <!-- FORM -->
+     <h3>Add New Transaction</h3>
     <form id="form">
       <input type="text" id="name" placeholder="Item name">
       <input type="number" id="amount" placeholder="Amount">
@@ -23,10 +27,11 @@
         <option value="Transport">Transport</option>
         <option value="Fun">Fun</option>
       </select>
-      <button type="submit">Add</button>
+      <button type="submit">Add Transaction</button>
     </form>
 
     <!-- LIST -->
+     <h3>Transactions</h3>
     <ul id="list"></ul>
 
     <!-- CHART -->
