@@ -1,2 +1,16 @@
 # CodingCamp-13April26-felixpanjiwidjaya
-Mini Coding - Expense &amp; Budget Visualizer. This is a mobile-friendly web app that helps users track their daily spending. It shows their total balance, a history of transactions, and a visual chart of spending by category. You can build it as a simple web page that works well on phones.
+Expense Tracker & Budget Visualizer
+
+Fitur:
+- Menambahkan dan menghapus transaksi
+- Custom kategori
+- Visualisasi data dengan chart
+- Dark/light mode
+- Set limit pengeluaran dengan highlight otomatis
+
+Teknologi:
+- HTML, CSS, JavaScript
+- Chart.js
+- LocalStorage
+
+Project ini dibuat untuk membantu pengguna memantau pengeluaran secara sederhana dan interaktif.
